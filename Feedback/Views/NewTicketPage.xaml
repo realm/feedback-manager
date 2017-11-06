@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:PageBase xmlns="http://xamarin.com/schemas/2014/forms" 
+                xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+                xmlns:local="clr-namespace:Pages;assembly=Feedback"
+                x:Class="Pages.NewTicketPage"
+                Title="New Ticket">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Command="{Binding CancelCommand}" Text="Cancel"/>
+        <ToolbarItem Command="{Binding SaveCommand}" Text="Save"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Entry Placeholder="Title" Text="{Binding Ticket.Title}" Margin="10" />
+            <Editor Text="{Binding Ticket.Description}" Margin="10" Grid.Row="1" />
+        </Grid>
+    </ContentPage.Content>
+</local:PageBase>
