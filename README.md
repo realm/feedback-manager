@@ -6,7 +6,7 @@ sentiment score and key phrases for a support ticket.
 
 ## Tutorial
 
-This project is accompanying the [announcement blog post](https://realm.io) that includes a step-by-step
+This project is accompanying the [announcement blog post](https://blog.realm.io/announcing-realm-dotnet/) that includes a step-by-step
 tutorial for building a simplified version of the feedback handler.
 
 ## Getting started
