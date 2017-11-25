@@ -40,7 +40,6 @@ namespace Server
                     var tickets = changeSetDetails.Insertions
                                                   .Select(i => i.CurrentObject)
                                                   .Select(o => (string)(o.Title + Environment.NewLine + o.Description))
-                                                  .Where(t => t.Length > 20)
                                                   .ToArray();
 
                     if (tickets.Length == 0)
